@@ -7,19 +7,13 @@ public class TestAutogarage{
 
 	private JFrame frame;
 	private SimulatorView view;
-	private Controller controller;
 	
-	
-	
-	
+
 	public TestAutogarage()
 	{
 		frame = new JFrame("TestAutogarage");
-		controller= new Controller();
-		
-		frame.getContentPane().add(controller);
-		frame.getContentPane().add(view);
-		
+		view =new SimulatorView();
+		frame.add(view);
 		frame.setVisible(true);
 		
 		
