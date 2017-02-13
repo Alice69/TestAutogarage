@@ -1,11 +1,29 @@
 package Parkeersimulator;
 
-public class TestAutogarage {
+import javax.swing.*;
 
-	public static void main(String[] args) {
-		Simulator sim = new Simulator();
-		sim.run();
 
+public class TestAutogarage{
+
+	private JFrame frame;
+	private SimulatorView view;
+	private Controller controller;
+	
+	
+	
+	
+	public TestAutogarage()
+	{
+		frame = new JFrame("TestAutogarage");
+		controller= new Controller();
+		
+		frame.getContentPane().add(controller);
+		frame.getContentPane().add(view);
+		
+		frame.setVisible(true);
+		
+		
+		
 	}
-
 }
+
